@@ -6,10 +6,17 @@ fetch's receipt-processor-challenge
 ```
 mkdir challenge
 cd challenge
-git clonse <url>
+git clone <url>
+cd receipt-processor-challenge
+npm install    # to install the dependencies
 ```
-2. npm install dependencies
-3. run the command below:
+3. run the command below in the terminal:
 ```
 node server.js
 ```
+
+## things to note:
+* The project will return receipts despite missing attributes - returns what is given
+* the project will assign a unique id to all new receipts
+  *  failure to assign a unique id will return an error
+  
